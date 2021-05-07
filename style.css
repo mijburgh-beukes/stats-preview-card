@@ -2,9 +2,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
+* {
+  outline: 1px solid magenta;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   font-size: 15px;
-  background-color: black;
+  background-color: hsl(233, 47%, 7%);
+  display: grid;
+  place-content: center;
 }
 
 h1 {
@@ -25,6 +38,36 @@ p {
   font-family: Inter;
   font-weight: 400;
   line-height: 1.8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 0 auto;
+  align-items: center;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 1rem;
+}
+
+.text-content {
+  width: 50%;
+  padding: 3rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 50%;
+  font-size: 0px;
+}
+
+.image img {
+  margin: 0;
 }
 
 .stat p {
